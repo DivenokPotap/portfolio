@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="/style.css">
 <style>
     /*---------------------------------------------------------header------------------------------------------------------*/
-    body{
-    font-family: "Roboto" , sans-serif;
-    font-weight: 500;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .container {
     margin: 0 auto;
 }
-.body{
-    font-weight: 500;
+
+body {
+    font-weight: 600;
     font-family: "Roboto", sans-serif;
+}
+a{
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;   
 }
 .flex {
     display: flex
@@ -66,10 +69,12 @@ a {
     margin-top: 100px;
     margin-left: 1050px;
 }
-.menu{
+
+.menu {
     font-weight: 500;
     font-family: "Roboto", sans-serif;
 }
+
 .menu1 {
     gap: 20px;
 }
@@ -116,10 +121,11 @@ a {
 
 .card {
     width: 370px;
-    height:404px;
+    height: 404px;
 }
-.card img{
-    height: 294px;   
+
+.card img {
+    height: 294px;
 }
 
 .info {
@@ -203,29 +209,35 @@ a {
 .tpp {
     margin-top: 150px;
 }
-.wr{
+
+.el1::after {
+    content: '';
     position: absolute;
-    width: 72px;
+    width: 78px;
+    height: 1px;
     margin-top: 42px;
-    border: 2px solid#2196F3; 
-    margin-left: 93px;
+    border: 1px solid #2196F3;
+    background-color: #2196F3;
+    left: 800px;
 }
-.overlay{
+
+.overlay {
     display: none;
     position: absolute;
     width: 370px;
-    height:404px;
+    height: 404px;
     background-color: #2195f390;
 }
-.overlay p{
+
+.overlay p {
     align-items: center;
     padding-top: 70px;
     padding-left: 50px;
-    font-family: "Roboto" , sans-serif;
-font-size: 20px;
-font-weight: 400;
-line-height: 35px;
-color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    color: white;
 }
 </style>
 </head>
