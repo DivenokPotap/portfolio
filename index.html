@@ -25,7 +25,16 @@ a{
 .flex {
     display: flex
 }
-
+      @keyframes slide-up-opacity {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
 .header-wrap {
     justify-content: space-around;
     align-items: center;
@@ -227,6 +236,8 @@ a {
     width: 370px;
     height: 404px;
     background-color: #2195f390;
+    opacity: 0;
+    animation: slide-up-opacity .6s cubic-bezier(0.4, 0, 0.2, 1) 500ms forwards;
 }
 
 .overlay p {
