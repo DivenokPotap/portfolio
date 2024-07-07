@@ -250,6 +250,38 @@ a {
     line-height: 35px;
     color: white;
 }
+      @keyframes slide-up-opacity {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }  
+    @keyframes changecl{
+        0%{
+            background-color: #F5F4FA;
+            color: black;
+        }
+        100%{
+            background-color: #2196F3;
+            color: white;
+        }
+    }
+    .el4:hover{
+        animation: changecl .6s cubic-bezier(0.4, 0, 0.2, 1) 900ms forwards;
+    }
+    .el3:hover{
+        animation: changecl .6s cubic-bezier(0.4, 0, 0.2, 1) 900ms forwards;
+    }
+    .el4:hover > .text2{
+        animation: changecl .6s cubic-bezier(0.4, 0, 0.2, 1) 900ms forwards;
+    }
+    .el3:hover > .text2{
+        animation: changecl .6s cubic-bezier(0.4, 0, 0.2, 1) 900ms forwards;
+    }
 </style>
 </head>
 
